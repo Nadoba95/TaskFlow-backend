@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = False
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://tvoj-frontend.vercel.app"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://task-flow-nadoba.netlify.app"]
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",") or []
 
