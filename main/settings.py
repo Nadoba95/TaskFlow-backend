@@ -57,7 +57,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://tvoj-frontend.vercel.app"]
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",") or []
 
